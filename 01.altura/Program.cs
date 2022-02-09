@@ -6,21 +6,21 @@ namespace _01.altura
     {
         static void Main(string[] args)
         {
-            int maior = 0, menor, i = 0;
+            decimal maior = 0, menor, i = 0;
 
             Console.WriteLine("Informe o 1° número");
-            int altura = Convert.ToInt32(Console.ReadLine());
+            decimal altura = Convert.ToDecimal(Console.ReadLine());
             maior = altura;
             menor = altura;
             i = 1;
 
-            for (i=2; i<=15; i++)
+            for (i = 2; i <= 15; i++)
             {
                 Console.WriteLine("Informe o " + i + "° número:");
-                altura = Convert.ToInt32(Console.ReadLine());      
-                
-                
-                if(altura < menor)
+                altura = Convert.ToDecimal(Console.ReadLine());
+
+
+                if (altura < menor)
                 {
                     menor = altura;
                 }
